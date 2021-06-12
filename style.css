@@ -26,23 +26,25 @@ nav ul {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
+    margin: 0;
 }
 
 
 /*each individual cell*/
 
 nav li {
-    min-height: 100%;
-    width: 100%;
+    background: rgb(54, 112, 219);
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    padding: 0 1em;
 }
 
 
 /*text of nav elements*/
 
 nav a {
-    display: block;
-    background: rgb(54, 112, 219);
     padding: 10px;
     color: white;
     font-size: 1.5rem;
@@ -53,7 +55,7 @@ nav a {
 
 /*expand and change color*/
 
-nav a:hover {
+nav li:hover {
     background: whitesmoke;
     /* color: rgb(24, 24, 24); */
     color: rgb(54, 112, 219);
